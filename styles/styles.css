@@ -50,7 +50,7 @@ body {
   }
   nav ul li:hover{
     background-color: rgba(80, 80, 80, 0.5);
-  color: rgb(22, 159, 35);/*VERDE*/
+    color: rgb(22, 159, 35);/*verde*/
   }
   nav ul li:active{
     background-color: rgb(255, 255, 255);
@@ -67,34 +67,34 @@ body {
     box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.24), 0px 0px 15px 0px rgba(0,0,0,0.19);
   }
   /*SLIDER BANNER*/
-  .slider {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
+  .slider{
+    width: 100%
+    margin auto;
+    overflow: hidden;
   }
   .slider ul {
-  display: flex;
-  padding: 0;
-  width: 400%;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
-  animation: cambio 25s infinite alternate linear;
+    display: flex;
+    padding: 0;
+    width: 400%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+    animation: cambio 25s infinite alternate linear;
   }
-  .slider li {
-  width: 100%;
-  list-style: none;
+  .slider li{
+    width: 100%;
+    list-style: none;
   }
-  .slider img {
-  width: 100%;
+  .slider img{
+    width: 100%;
   }
   @keyframes cambio {
-  0% {margin-left: 0;}
-  20% {margin-left: 0;}
-  25% {margin-left: -100%;}
-  45% {margin-left: -100%;}
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
-  75% {margin-left: -300%;}
-  100% {margin-left: -300%;}
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
   }
   .banner img{
     width: 100%;
@@ -419,7 +419,6 @@ body {
     background-color: rgb(224, 185, 18);
   }
   /*contenido consolas*/
-  
   footer{
       text-align: center;
       width: 100%;
