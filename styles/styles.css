@@ -419,74 +419,7 @@ body {
     background-color: rgb(224, 185, 18);
   }
   /*contenido consolas*/
-  .play{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .play ul{
-    list-style: none;
-  }
-  .play ul li{
-    display: inline-block;
-  }
-  .play ul li img{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: block;
-  }
-  .play ul li a{
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin: 0px;
-  }
-  .play1{
-    background-color: rgb(40, 40, 40);
-    height: 220px;
-    width: 15%;
-    margin: 5%;
-    }
-  .play1:hover{
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
-    }
-  .name{
-    text-decoration: underline;
-    font: 16px ;
-    font-weight: bolder;
-    margin: 0px;
-  }
-  .precio{
-    color: red;
-    font-style: italic;
-    font-weight: bold;
-    margin: 0px;
-  }
-  .calif{
-    color: rgb(224, 185, 18);
-    font-size: 40px;
-    margin: 0px;
-  }
-  .button {
-    background-color: rgb(41, 101, 217);
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    width: 240px;
-    margin-top: 0px;
-    display: none;
-  }
-  .button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
-    color: black;
-    background-color: rgb(224, 185, 18);
-  }
+  
   footer{
       text-align: center;
       width: 100%;
