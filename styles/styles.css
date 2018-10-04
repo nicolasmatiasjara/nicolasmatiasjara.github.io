@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
   /*version desktop*/
-@media screen and (min-width:361px){
+@media screen and (min-width:361px) and(max-width:){
   /*Menu de navegacion*/
   nav ul{
     list-style: none;
