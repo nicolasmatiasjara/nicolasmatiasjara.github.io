@@ -707,7 +707,7 @@ body {
   background-color: rgb(41, 41, 41);
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   color: rgb(218, 17, 17);/*rojo*/
-  height: 30px;
+  height: 40px;
   padding: 20px 0px 10px 0px;
   font-size: 20px;
   font-family: fantasy;
@@ -913,6 +913,7 @@ body {
   }
   #btn-sesion{
     width: 96%;
+    margin-top: 10px;
     background-color: rgb(22, 159, 35);/*VERDE*/
   }
   #btn-sesion:hover{
@@ -971,15 +972,12 @@ body {
   }
   /*contenido consolas*/
   .cons{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 1%;
     margin-bottom: 50px;
+    padding-bottom: 10%;
   }
   .cons ul{
     list-style: none;
-  }
-  .cons ul li{
-    display: inline-block;
   }
   .cons ul li img{
     width: 100%;
@@ -994,9 +992,10 @@ body {
   }
   .cons1{
     background-color: rgb(40, 40, 40);
-    height: 425px;
-    width: 23%;
+    height: auto;
+    width: 79.5%;
     margin: 5%;
+    margin-top: 10px;
     }
   .cons1:hover{
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
