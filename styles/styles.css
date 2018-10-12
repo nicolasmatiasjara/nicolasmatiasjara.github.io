@@ -1,5 +1,9 @@
 body {
   margin: 0;
+
+}
+body a{
+  text-decoration: none;
 }
   /*version desktop*/
 @media screen and (min-width:361px){
