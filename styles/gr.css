@@ -1,0 +1,13 @@
+*{
+  background-color: rgb(22, 159, 35);/*VERDE*/
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: sans-serif;
+}
+img{
+ width: 20%;
+}
+.volver{
+  width: 10%;
+}

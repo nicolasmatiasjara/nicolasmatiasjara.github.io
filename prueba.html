@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="styles/master.css">
+      <script src="scripts/pago.js"></script> <!-- prueba de pago-->
+      <script src="scripts/juegos.js"></script> <!-- prueba de pago-->
+
+  </head>
+  <body>
+
+    <section class="campo-compra">
+      <h1>Registrate</h1>
+      <form action="/registro" method="post" class="formpago">
+        <section>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre"  placeholder="Escriba aquí su nombre..." maxlength="30" required>
+        </section>
+        <section>
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Escriba aquí su apellido..." maxlength="30" required>
+        </section>
+        <section>
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" min="18" max="110" required>
+        </section>
+        <section>
+          <label for="email">Email:</label>
+          <input type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" id="email" name="email"required>
+        </section>
+        <p>Tpo de pago:</p>
+        <input type="radio" name="pago" id="visa" >
+        <label>Tarjeta visa</label>
+        <input type="radio" name="pago" id="oca">
+        <label>Tarjeta oca</label>
+        <input type="radio" name="pago" id="abitab">
+        <label>Locales abitab</label>
+        <section>
+          <input type="radio" name="juegos" id="f-fisico" checked>
+          <label>Formato fisico</label>
+          <input type="radio" name="juegos" id="f-digital">
+          <label>Formato digital</label>
+       </section>
+         <section id="t-envio">
+           <section>
+             <label for="direccion">Dirección para el envío</label>
+           </section>
+           <section>
+             <textarea cols="50" rows="10" id="direccion"  name="direccion" required></textarea>
+           </section>
+         <p>Tipo de envio:</p>
+         <input type="radio" name="envio" id="bronce" >
+         <label>Bronce</label>
+         <input type="radio" name="envio" id="plata">
+         <label>Plata</label>
+         <input type="radio" name="envio" id="oro">
+         <label>Oro</label>
+       </form>
+      </section>
+      <section>
+      <form id="calculo-pago" class="sumatoriaestilo">
+        <section>
+          <p>PRECIO X UNIDAD = U$S 50</p>
+        </section>
+        <section>
+          <label for="cantidad">CANTIDAD</label>
+          <input type="number" id="cantidad" name="cantidad"  min="0" value="0">
+        </section>
+        <section>
+         <p> PRECIO X CANTIDAD = <span id="precioxcantidad"></span></p>
+        </section>
+        <section>
+         <p> IVA = <span id="iva"></span></p>
+        </section>
+        <section>
+         <p> ENVIO = <span id="envio"></span></p>
+       </section>
+       <section>
+         <p> TOTAL A PAGAR = <span id="precio-final"></span></p>
+       </section>
+       </section>
+       <section>
+      </section>
+      </form>
+      <form class="fin-compra" action="gracias.html">
+        <input type="submit" value="Fin Compra" />
+    </form>
+    </section>
+
+  </body>
+</html>

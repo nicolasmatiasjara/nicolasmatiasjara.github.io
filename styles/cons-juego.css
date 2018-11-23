@@ -1,0 +1,264 @@
+/* VERSION DESKTOP */
+@media screen and (min-width:361px){
+  /*contenido consolas*/
+  .cons{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .cons ul{
+    list-style: none;
+  }
+  .cons ul li{
+    display: inline-block;
+  }
+  .cons ul li img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .cons ul li a{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px;
+  }
+  .cons1{
+    background-color: rgb(40, 40, 40);
+    height: 425px;
+    width: 23%;
+    margin: 5%;
+    }
+  .cons1:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+    }
+  .name{
+    text-decoration: underline;
+    font: 16px ;
+    font-weight: bolder;
+    margin: 0px;
+  }
+  .precio{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0px;
+  }
+  .calif{
+    color: rgb(224, 185, 18);
+    font-size: 40px;
+    margin: 0px;
+  }
+  .button-send {
+    background-color: rgb(224, 185, 18);/*amarillo*/
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 240px;
+    margin-top: 0px;
+  }
+  .button-send:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 101, 217);/*azul*/
+  }
+  /*Contenido de cada JUEGO*/
+  .game-complet{
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .game-c{
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    padding-bottom: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+  }
+  .game-complet .game-port{
+    width: 30%;
+    height: auto;
+    padding: 20px 100px;
+  }
+  .info-game{
+    float: right;
+    margin: -450px 80px 10px 500px;
+    text-align: justify;
+  }
+  .info-game p{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-family: sans-serif;
+  }
+  .game-precio{
+    color: red;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  .game-cat{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  .game-calif{
+    color: rgb(224, 185, 18);/*amarillo*/
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: fantasy;
+    float: right;
+    margin-top: -105px;
+  }
+  .min-game{
+    float: left;
+    width: 22%;
+    height: 115px;
+    padding-left: 2%;
+    margin-top: -100px;
+  }
+  #btn-game{
+    margin: 2%;
+    margin-left: 1%;
+    width: 98%;
+    background-color: rgb(22, 159, 35);/*VERDE*/
+  }
+  #btn-game:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+    color: black;
+    background-color: rgb(224, 185, 18);
+  }
+}
+/* VERSION MOBIL */
+@media screen and (max-width:360px){
+  /*contenido consolas*/
+  .cons{
+    padding-top: 1%;
+    margin-bottom: 50px;
+    padding-bottom: 10%;
+  }
+  .cons ul{
+    list-style: none;
+  }
+  .cons ul li img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .cons ul li a{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px;
+  }
+  .cons1{
+    background-color: rgb(40, 40, 40);
+    height: auto;
+    width: 79.5%;
+    margin: 5%;
+    margin-top: 10px;
+    }
+  .cons1:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+    }
+  .name{
+    text-decoration: underline;
+    font: 16px ;
+    font-weight: bolder;
+    margin: 0px;
+  }
+  .precio{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0px;
+  }
+  .calif{
+    color: rgb(224, 185, 18);
+    font-size: 40px;
+    margin: 0px;
+  }
+  .button-send {
+    background-color: rgb(224, 185, 18);/*amarillo*/
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 240px;
+    margin-top: 0px;
+  }
+  .button-send:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 101, 217);/*azul*/
+  }
+  /*Contenido de cada JUEGO*/
+  .game-complet{
+    padding-top: 1%;
+    padding-bottom: 10%;
+  }
+  .game-c{
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    padding-bottom: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+  }
+  .game-complet .game-port{
+    width: 50%;
+    height: auto;
+    padding: 5% 25%;
+  }
+  .info-game{
+    float: right;
+    padding: 0% 4%;
+    text-align: justify;
+  }
+  .info-game p{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+  .game-precio{
+    color: red;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  .game-cat{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  .game-calif{
+    color: rgb(224, 185, 18);/*amarillo*/
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: fantasy;
+    float: right;
+    margin-top: -90px;
+  }
+  .min-game{
+    float: left;
+    width: 45%;
+    height: 120px;
+    padding-left: 3.5%;
+    margin-top: 10px;
+  }
+  #btn-game{
+    margin: 2%;
+    margin-left: 3%;
+    width: 94%;
+    background-color: rgb(22, 159, 35);/*VERDE*/
+  }
+  #btn-game:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 10px 0 rgba(0,0,0,0.19);
+    color: black;
+    background-color: rgb(224, 185, 18);
+  }
+}

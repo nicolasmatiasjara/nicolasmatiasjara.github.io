@@ -4,7 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MY GAMES</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nav.css"> <!--menu-->
+    <link rel="stylesheet" href="styles/styles.css"> <!--cuerpo del texto-->
+    <link rel="stylesheet" href="styles/footer.css"> <!--footer-->
+    <link rel="stylesheet" href="styles/catalogo.css"><!--catalogo-->
+    <link rel="stylesheet" href="styles/users.css"> <!--vista de usuarios-->
+    <link rel="stylesheet" href="styles/cons-juego.css"> <!--vista de consolas-->
+    <link rel="stylesheet" href="styles/vista-juego.css"> <!--vista del juego-->
+    <link rel="stylesheet" href="styles/boton-caja.css">
+    <script src="scripts/arrJuego.js"></script> <!--datos de vista de juego-->
+    <script src="scripts/vista-juego.js"></script> <!-- javascripts de vista de juego-->
+    <script src="scripts/pago.js"></script> <!-- prueba de pago-->
+    <script src="scripts/abrir-compra.js"></script> <!-- abre y cierra compra-->
+    <link rel="icon" type="image/ico" href="images/icon.ico" /> <!--icono de la pagina-->
   </head>
   <body>
     <nav>
@@ -14,65 +26,140 @@
           <a href="nos.html"><li>NOSOTROS</li></a>
           <a href="cat.html"><li class="activo">CATALOGO</li></a>
           <a href="cont.html"><li>CONTACTO</li></a>
-          <section class="log">
-          <a href="log.html"><li class="login"><img src="images/icon/user.png" alt="inicio sesion"> INICIO DE SESION</li></a>
-          <a href="reg1.html"><li class="login"><img src="images/icon/reg.png" alt="nuevo registro"> NUEVO REGISTRO</li></a>
-          </section>
         </ul>
       </section>
     </nav>
     <main>
       <section class="contenido">
         <section class="game-complet">
-          <h3 class="title">ASSASSIN´S CREED IV</h3>
-          <section class="game-c">
-            <img src="images/port/lanz-j1.jpg" alt="portada" class="game-port">
-            <section class="info-game">
-              <p>Las muestras tomadas del cuerpo de Desmond Miles después de su muerte han permitido a Abstergo Industries seguir explorando sus memorias genéticas utilizando el Animus y las recién descubiertas habilidades de computación en nube. El personaje anónimo que controla el jugador es contratado por la división de entretenimiento de Abstergo para tamizar a través de los recuerdos de Edward Kenway, un pirata del siglo XVIII, y el abuelo de Connor Kenway.
-                Aparentemente, se trata de reunir material para la motorización de una película interactiva del Animus, pero en realidad, Abstergo y los templarios están buscando el Observatorio, una estructura precursora que permite al usuario ver a través de los ojos de un sujeto.
-              </p>
-              <h2 class="game-precio">50 USD</h2>
-              <h2 class="game-cat">ACCION-AVENTURA</h2>
-              <h2 class="game-calif">*****</h2>
+          <section>
+            <section id="vista-juego">
             </section>
-          <img src="images/min/lanz-j1-min1.jpg" alt="min1" height="150px" width="300" class="min-game">
-          <img src="images/min/lanz-j1-min2.jpg" alt="min2" height="150px" width="300" class="min-game">
-          <img src="images/min/lanz-j1-min3.jpg" alt="min3" height="150px" width="300" class="min-game">
-          <img src="images/min/lanz-j1-min4.jpg" alt="min4" height="150px" width="300" class="min-game">
-          <input type="button" name="" value="COMPRAR" class="button" id="btn-game">
-          <section class="form-contacto">
-            <form class="contacto" action="index.html" method="post">
-              <fieldset>
-                <p>
-                  <label for="name">
-                    <span>NOMBRE: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                  </label>
-                  <input type="text" id="name" name="username" maxlength="30" required>
-                </p>
-                <p>
-                  <label for="mail">
-                    <span>E-MAIL: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                  </label>
-                  <input type="email" id="mail" name="usermail" required>
-                </p>
-                <p>
-                  <label for="comentario">
-                    <span>COMENTARIO: </span>
-                    <strong><abbr title="required">*</abbr></strong>
-                  </label>
-                  <input type="text" id="comentario" name="comentario" maxlength="500" required class="msj">
-                </p>
-                <input type="submit" value="ENVIAR" class="button" id="send">
-              </fieldset>
-            </form>
+            <button type="button" name="button" onclick="vistaPago()" class="button-bay" id="cancelar">COMPRAR</button>
           </section>
-        </section>
-        </section>
-          <h1> EL JUEGO SOLO TERMINA SI TE RINDES</h1>
+           <section class="pago-juego" id="caja2"><!-- vista pago juego -->
+             <section class="campo-compra">
+               <form action="" method="post" class="formpago">
+                 <p class="s-compra"> Datos de Compra </p>
+                 <section class="dato-pago">
+                   <label for="nombre">Nombre</label>
+                   <input type="text" id="nombre" name="nombre"  placeholder="Escriba su nombre" maxlength="30" required>
+                 </section>
+                 <section class="dato-pago">
+                   <label for="apellido">Apellido</label>
+                   <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" maxlength="30" required>
+                 </section>
+                 <section class="dato-pago">
+                   <label for="email">Email:</label>
+                   <input type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" id="email" name="email"required>
+                 </section>
+                 <p class="m-pago">Modalidad de pago</p>
+                 <section class="metodo-pago1">
+                   <label for="nombre">Numero de tarjeta</label>
+                   <input type="number" id="number" name="number"  placeholder="Ej: 4321 2345 3212 4567" maxlength="30" required>
+                 </section>
+                 <section class="metodo-pago2">
+                   <label for="date">Vencimiento</label>
+                   <input type="date" id="date" name="date" placeholder="00/0000" maxlength="6" required>
+                 </section>
+                 <section class="metodo-pago3">
+                   <label for="cv">Codigo de seguridad</label>
+                   <input type="number" id="cv" name="cv"  maxlength="3" required>
+                 </section>
+                 <section class="f-envio">
+                   <p class="t-envio"> Formato </p>
+                    <p class="f-fisico">
+                      Formato fisico
+                      <input type="radio" name="juegos" id="f-fisico" checked>
+                    </p>
+                    <p class="f-digital">
+                      Formato digital
+                      <input type="radio" name="juegos" id="f-digital">
+                    </p>
+                </section>
+                  <section id="t-envio">
+                    <section>
+                      <label for="direccion">Seleccione modalida de envio</label>
+                    </section>
+                    <section>
+                      <textarea cols="70" rows="3" id="direccion" placeholder="Para el envio en formato fisico se requiere que ingrese su DIRECCION ..." name="direccion" required></textarea>
+                    </section>
+                <p>
+                  <input type="radio" name="envio" id="bronce" >
+                  <label>Bronce</label>
+                </p>
+                <p>
+                  <input type="radio" name="envio" id="plata">
+                  <label>Plata</label>
+                </p>
+                <p>
+                  <input type="radio" name="envio" id="oro">
+                  <label>Oro</label>
+                </p>
+                </form>
+               </section>
+               <form id="calculo-pago">
+                 <section>
+                   <p>PRECIO X UNIDAD = U$S 50</p>
+                 </section>
+                 <section>
+                   <label for="cantidad">CANTIDAD</label>
+                   <input type="number" id="cantidad" name="cantidad"  min="0" value="0">
+                 </section>
+                 <section>
+                  <p> PRECIO X CANTIDAD = <span id="precioxcantidad"></span></p>
+                 </section>
+                 <section>
+                  <p> IVA = <span id="iva"></span></p>
+                 </section>
+                 <section>
+                  <p> ENVIO = <span id="envio"></span></p>
+                </section>
+                <section>
+                  <p class="precio-final"> TOTAL A PAGAR = <span id="precio-final"></span></p>
+                </section>
+                <section>
+               </section>
+               </form>
+               <form class="fin-compra" action="gracias.html">
+                 <input type="submit" value="Fin Compra" class="button-bay"/>
+             </form>
+             </section>
+          </section>
+          </section>
+       <section> <!--COMENTARIO -->
+        <button type="button" name="button" class="button-bay" id="boton" onclick="divLogin()">COMENTARIO</button>
+        <section class="comentario" id="caja">
+            <form class="form-comentario" action="index.html" method="post">
+            <p class="dato1" id="inp">
+              <label for="name">
+                <span>NOMBRE: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="name" name="username" maxlength="30" required>
+            </p>
+            <p class="dato2" id="inp2">
+              <label for="mail">
+                <span>E-MAIL: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="email" id="mail" name="usermail" required>
+            </p>
+            <p class="dato3" id="inp3">
+              <label for="comentario">
+                <span>COMENTARIO: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="comentario" name="comentario" maxlength="500" required >
+            </p>
+            <button type="submit" name="ENVIAR" value="ENVIAR" class="button" id="inp4">ENVIAR</button>
+          </form>
         </section>
       </section>
+      <section>
+        <h1> EL JUEGO SOLO TERMINA SI TE RINDES</h1>
+      </section>
+    </section>
     </main>
     <footer>
       <section class="datos">

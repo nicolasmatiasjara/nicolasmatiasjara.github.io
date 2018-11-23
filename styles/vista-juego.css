@@ -1,0 +1,522 @@
+/* referencias
+background-color: rgb(22, 159, 35);/*VERDE*//*
+background-color: rgb(41, 101, 217);/*azul*//*
+background-color: rgb(224, 185, 18);/*amarillo*//*
+background-color: rgb(218, 17, 17);/*rojo*/
+@media screen and (min-width:361px){
+  h3{
+    font-family: serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 10px 0px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  section img{
+    width: 30%;
+    margin-left: 5%;
+    margin-top: -10px;
+  }
+  b{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-left: 610px;
+    margin-right: 11%;
+    margin-top: -415px;
+    text-align: justify;
+    z-index: 1;
+    position: absolute;
+  }
+  h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 610px;
+    margin-right: 10px;
+    margin-top: -150px;
+    color: red;
+    text-align: center;
+  }
+  h5{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 610px;
+    margin-right: 10px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  h6{
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 610px;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: rgb(222, 214, 14);
+    text-align: center;
+  }
+  div{
+    margin-left: 400px;
+    margin-right: 10px;
+    margin-top: -570px;
+  }
+  div img{
+    width: 200px;
+    height: 100px;
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .button-bay{
+    background-color: rgb(41, 101, 217);/*azul*/
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 325px;
+    margin-left: 5%;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  .button-bay:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(224, 185, 18);/*amarillo*/
+    color: black;
+    font-weight: bold;
+  }
+  /* pago juego */
+  .pago-juego{
+    z-index: 2;
+    display: none;
+    position: absolute;
+  }
+  .s-compra{
+    margin-top: 0px;
+    padding-top: 10px;
+    text-align: center;
+    height: 30px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 159, 35);/*VERDE*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .dato-pago{
+    margin-left: 5%;
+    margin-top: 1%;
+    font-family: serif;
+  }
+  .dato-pago input{
+    margin-right: 700px;
+    width: 150px;
+  }
+  .metodo-pago1{
+    float: right;
+    width: 70%;
+    height: 10px;
+    margin-top: -40px;
+    margin-right: -200px;
+  }
+  .metodo-pago2{
+    float: right;
+    width: 70%;
+    height: 10px;
+    margin-top: 10px;
+    margin-right: -200px;
+  }
+  .metodo-pago2 input{
+    width: 100px;
+  }
+  .metodo-pago3{
+    float: right;
+    width: 70%;
+    height: 10px;
+    margin-top: 40px;
+    margin-right: -200px;
+  }
+  .metodo-pago3 input{
+    width: 100px;
+  }
+  .m-pago{
+    background-color: rgb(160, 160, 160);
+    height: 20px;
+    margin-top: -90px;
+    padding-top: 5px;
+    padding-left: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 159, 35);/*VERDE*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-family: sans-serif;
+    width: 50%;
+    float: right;
+  }
+  .t-envio{
+    background-color: rgb(160, 160, 160);
+    height: 20px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 159, 35);/*VERDE*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width: 40%;
+    font-family: sans-serif;
+  }
+  .f-envio{
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .f-digital{
+    margin-left: 4%;
+  }
+  .f-fisico{
+    margin-left: 5%;
+  }
+  .f-fisico input{
+    margin-right: 50px;
+  }
+  .f-digital input{
+    margin-right: 255px;
+  }
+  #t-envio{
+    margin-left: 0%;
+  }
+  #t-envio label{
+    margin-left: 70px;
+  }
+  textarea{
+    margin-left: 5%;
+    width: 235px;
+  }
+  #t-envio input{
+    margin-right: 560px;
+  }
+  #calculo-pago{
+    width: 50%;
+    height: 220px;
+    float: right;
+    margin-top: -230px;
+    margin-right: 2px;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid;
+  }
+  #cantidad{
+    margin-right: 300px;
+    width: 50px;
+    height: 20px;
+    border: 2px solid red;
+    margin-top: -5px;
+  }
+  .precio-final{
+    font-weight: bolder;
+    font-size: 18px;
+    color: red;
+  }
+  /* comentario */
+  .comentario{
+    margin-top: 50px;
+    background-color: rgb(40, 40, 40);
+    width: 500px;
+    height: 280px;
+    margin-left: 25%;
+    margin-bottom: 100px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .dato1{
+    padding-top: 20px;
+    margin-left: 30%;
+    color: rgb(255, 255, 255);
+  }
+  .dato2{
+    margin-left: 30%;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .dato3{
+    margin-left: 30%;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+  }
+  #comentario{
+    height: 90px;
+  }
+  input{
+    float: right;
+    margin-right: 30%;
+    margin-top: 0px;
+    width: 300px;
+    margin-left: 20px;
+  }
+  .button{
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 150px;
+  }
+}
+/* VERSION MOBIL */
+@media screen and (max-width:360px){
+  h3{
+    font-family: serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 10px 0px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  section img{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 0px;
+  }
+  b{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-left: 12%;
+    margin-right: 11%;
+    margin-top: 10px;
+    text-align: justify;
+    z-index: 1;
+    position: absolute;
+  }
+  h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 450px;
+    color: red;
+    text-align: center;
+  }
+  h5{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  h6{
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: -10px;
+    color: rgb(222, 214, 14);
+    text-align: center;
+  }
+  div{
+    margin-left: 22%;
+    margin-right: 10px;
+    margin-top: -80px;
+  }
+  div img{
+    width: 200px;
+    height: 100px;
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .button-bay{
+    background-color: rgb(41, 101, 217);/*azul*/
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 100%;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  .button-bay:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(224, 185, 18);/*amarillo*/
+    color: black;
+    font-weight: bold;
+  }
+  /* pago juego */
+  .pago-juego{
+    z-index: 2;
+    display: block;
+    position: absolute;
+  }
+  .s-compra{
+    margin-top: 0px;
+    padding-top: 10px;
+    text-align: center;
+    height: 30px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 159, 35);/*VERDE*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .dato-pago{
+    margin-left: 5%;
+    margin-top: 1%;
+    font-family: serif;
+  }
+  .dato-pago input{
+    margin-right: 10px;
+    width: 150px;
+  }
+  .metodo-pago1{
+    margin-left: 5%;
+    margin-top: 1%;
+    font-family: serif;
+  }
+  .metodo-pago1 input{
+    margin-right: 10px;
+    width: 150px;
+  }
+  .metodo-pago2{
+    margin-left: 5%;
+    margin-top: 10px;
+    font-family: serif;
+  }
+  .metodo-pago2 input{
+    margin-right: 10px;
+    width: 150px;
+  }
+  .metodo-pago3{
+    margin-left: 5%;
+    margin-top: 10px  ;
+    font-family: serif;
+  }
+  .metodo-pago3 input{
+    margin-right: 10px;
+    width: 150px;
+  }
+  .m-pago{
+    background-color: rgb(160, 160, 160);
+    height: 20px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 159, 35);/*VERDE*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+  }
+  .t-envio{
+    background-color: rgb(160, 160, 160);
+    height: 20px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 40%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 159, 35);/*VERDE*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-family: sans-serif;
+    width: 60%;
+  }
+  .f-envio{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .f-digital{
+    margin-left: 150px;
+  }
+  .f-fisico{
+    margin-left: 150px;
+    padding-bottom: 10px;
+  }
+  .f-fisico input{
+    margin-left: 20px;
+      }
+  .f-digital input{
+    margin-left: 20px;
+
+  }
+  #t-envio{
+    margin-left: 13%;
+  }
+  #t-envio label{
+    margin-left: 40px;
+  }
+  textarea{
+    margin-left: 5%;
+    width: 235px;
+  }
+  #t-envio input{
+    margin-right: 0px;
+  }
+  #calculo-pago{
+    width: 100%;
+    height: 220px;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color: rgb(245, 245, 245);
+  }
+  #cantidad{
+    margin-right: 0px;
+    width: 50px;
+    height: 20px;
+    border: 2px solid red;
+    margin-top: -5px;
+  }
+  .precio-final{
+    font-weight: bolder;
+    font-size: 18px;
+    color: red;
+  }
+  /* comentario */
+  .comentario{
+    margin-top: 50px;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    height: 480px;
+    margin-left: 0;
+    margin-bottom: 0px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .dato1{
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+  }
+  .dato2{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .dato3{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+  }
+  #comentario{
+    height: 90px;
+  }
+  input{
+    float: right;
+    margin-right: 0%;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .button{
+    margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+}
