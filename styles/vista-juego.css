@@ -352,6 +352,13 @@ background-color: rgb(218, 17, 17);/*rojo*/
     z-index: 2;
     display: block;
     position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+	  height: 570px;
+	  margin-top: -630px;
+	  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		transition: height .4s;
+    overflow-x: scroll;
   }
   .s-compra{
     margin-top: 0px;
@@ -365,12 +372,15 @@ background-color: rgb(218, 17, 17);/*rojo*/
   }
   .dato-pago{
     margin-left: 5%;
-    margin-top: 1%;
+    margin-top: 2%;
     font-family: serif;
   }
   .dato-pago input{
-    margin-right: 10px;
-    width: 150px;
+    margin-right: 5%;
+    height: 30px;
+    width: 320px;
+    margin-left: 5%;
+    margin-bottom: 4%;
   }
   .metodo-pago1{
     margin-left: 5%;
@@ -378,8 +388,10 @@ background-color: rgb(218, 17, 17);/*rojo*/
     font-family: serif;
   }
   .metodo-pago1 input{
-    margin-right: 10px;
-    width: 150px;
+    margin-right: 5%;
+    width: 320px;
+    height: 30px;
+    margin-bottom: 2%;
   }
   .metodo-pago2{
     margin-left: 5%;
@@ -387,8 +399,10 @@ background-color: rgb(218, 17, 17);/*rojo*/
     font-family: serif;
   }
   .metodo-pago2 input{
-    margin-right: 10px;
-    width: 150px;
+    margin-right: 5%;
+    width: 320px;
+    height: 30px;
+    margin-bottom: 2%;
   }
   .metodo-pago3{
     margin-left: 5%;
@@ -396,13 +410,15 @@ background-color: rgb(218, 17, 17);/*rojo*/
     font-family: serif;
   }
   .metodo-pago3 input{
-    margin-right: 10px;
-    width: 150px;
+    margin-right: 5%;
+    width: 320px;
+    height: 30px;
+    margin-bottom: 2%;
   }
   .m-pago{
     background-color: rgb(160, 160, 160);
     height: 20px;
-    margin-top: 20px;
+    margin-top: 80px;
     padding-top: 5px;
     padding-left: 0px;
     color: rgb(255, 255, 255);
@@ -415,7 +431,7 @@ background-color: rgb(218, 17, 17);/*rojo*/
   .t-envio{
     background-color: rgb(160, 160, 160);
     height: 20px;
-    margin-top: 20px;
+    margin-top: 80px;
     padding-top: 5px;
     padding-left: 40%;
     color: rgb(255, 255, 255);
@@ -427,23 +443,25 @@ background-color: rgb(218, 17, 17);/*rojo*/
   .f-envio{
     width: 100%;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .f-digital{
-    margin-left: 150px;
+    margin-left: 130px;
+    margin-top: 30px;
   }
   .f-fisico{
-    margin-left: 150px;
+    margin-left: 130px;
+    margin-top: 30px;
     padding-bottom: 10px;
   }
   .f-fisico input{
-    margin-left: 20px;
+    margin-right: 70px;
       }
   .f-digital input{
-    margin-left: 20px;
-
+    margin-right: 70px;
   }
   #t-envio{
+    margin-top: 50px;
     margin-left: 13%;
   }
   #t-envio label{
